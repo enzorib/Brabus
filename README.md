@@ -7,7 +7,7 @@ Este projeto é um site moderno e responsivo para uma academia, desenvolvido par
 ## Funcionalidades Principais
 
 
-## Colaboradores: <a href=https://www.linkedin.com/in/enzo-ribeiro>Enzo Ribeiro da Silva</a>, <a href=https://www.linkedin.com/in/gustavo-de-lima-3988081ba>Gustavo Bezerra de Lima</a>.
+Colaboradores: <a href=https://www.linkedin.com/in/enzo-ribeiro>Enzo Ribeiro da Silva</a>, <a href=https://www.linkedin.com/in/gustavo-de-lima-3988081ba>Gustavo Bezerra de Lima</a>.
 
 
 
