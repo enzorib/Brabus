@@ -2,7 +2,8 @@
 Este projeto é um site moderno e responsivo para uma academia, desenvolvido para oferecer uma excelente experiência tanto em computadores quanto em dispositivos móveis. A plataforma permite a visualização de planos, localização, informações sobre os instrutores, além de funcionalidades como agendamento de treinos experimentais.
 
 ## Tecnologia utilziadas
-<li>Front-End: HTML, CSS, JavaScript</li>
+<li>Front-End: HTML, CSS e JavaScript</li>
+<li>Design: Figma e Canva</li>
 
 ## Funcionalidades Principais
 <li>Consulta de planos e modalidades</li>
