@@ -1,6 +1,6 @@
 body {
     color: #fff;
-    background: url(../img/bglight.png) center/contain no-repeat fixed;
+    background: url(../img/bglight.png) center/contain  fixed;
 
 }
 
@@ -17,7 +17,7 @@ margin: 0;
 
 
 section {
-  height: 100vh;
+  height: 80vh;
   margin:0;
 
 }
@@ -166,7 +166,7 @@ nav.active {
   transition: all 0.3s ease;
 }
 #botaoAgende{display: block;         /* Adicione esta linha */
-  margin: 80% auto;}
+  margin: 90% auto;}
 
 #ver-mais{
   display: block;         /* Adicione esta linha */
@@ -182,7 +182,7 @@ h1 {
   border: 1px solid #fff;
  margin: 20px 0;
   height: 40%;
-  color: white;
+  color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -194,6 +194,20 @@ h1 {
   font-size: 24px;
   letter-spacing: 2px;
   text-transform: uppercase;
+}
+
+#jiujitsu{
+  background-image: url(../img/imgJiuJitsu.png);
+  background-size: cover;
+  background-position: center;
+  
+}
+#muaytai{
+
+  background-image: url(../img/imgMuaythai.png);
+  background-size: cover;
+  background-position: center;
+  
 }
 
 
@@ -246,7 +260,7 @@ button.next {
 
 .container {
   border: 1px solid #fff;
-  height: 70%;
+  height: 90%;
   width: 80%;
   margin: 5em auto;
   padding: 20px;
