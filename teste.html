@@ -7,30 +7,82 @@
 </head>
 <body>
 <style>
-    
+.testimonial-carousel {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+  height: 150px; /* Altura fixa para evitar pular conteúdo */
+}
+
+.testimonial {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.testimonial.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.testimonial p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.testimonial h4 {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #555;
+}
+
+
 </style>
-  <section class="aulas-section">
-    <h2 class="aulas-title">NOSSAS AULAS</h2>
+ <div class="testimonial-carousel">
+  <div class="testimonial active">
+    <p>"Ótima academia! Estrutura moderna e professores atenciosos."</p>
+    <h4>- João Silva</h4>
+  </div>
+  <div class="testimonial">
+    <p>"Ambiente limpo e agradável. Me sinto motivado todos os dias!"</p>
+    <h4>- Maria Oliveira</h4>
+  </div>
+  <div class="testimonial">
+    <p>"Variedade de equipamentos e aulas incríveis. Recomendo!"</p>
+    <h4>- Pedro Souza</h4>
+  </div>
+  <div class="testimonial">
+    <p>"Excelentes profissionais, sempre dispostos a ajudar."</p>
+    <h4>- Ana Paula</h4>
+  </div>
+</div>
 
-    <div class="aulas-grid">
-      <div class="aula-card">
-        <img src="https://images.unsplash.com/photo-1598961701391-b991ded8f6d4" alt="Jiu-Jitsu">
-        <div class="aula-overlay">
-          <span>JIU-JITSU</span>
-        </div>
-      </div>
+<script>
+const testimonials = document.querySelectorAll('.testimonial');
+let currentIndex = 0;
 
-      <div class="aula-card">
-        <img src="https://images.unsplash.com/photo-1608954527951-73079ec52f32" alt="Muay-Thai">
-        <div class="aula-overlay">
-          <span>MUAY-THAI</span>
-        </div>
-      </div>
-    </div>
+function showNextTestimonial() {
+  testimonials[currentIndex].classList.remove('active');
+  
+  currentIndex = (currentIndex + 1) % testimonials.length;
+  
+  testimonials[currentIndex].classList.add('active');
+}
 
-    <p class="aulas-subtitle">CONFIRA ABAIXO TODAS NOSSAS AULAS DISPONÍVEIS</p>
-    <a href="#" class="btn-ver-mais">VER MAIS</a>
-  </section>
+setInterval(showNextTestimonial, 3500);
+
+</script>
 
 </body>
 </html>

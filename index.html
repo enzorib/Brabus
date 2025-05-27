@@ -16,9 +16,15 @@
 
     <header>
       <div class="logo">
-        <p>BRABUS</p>
-        <img src="./src/img/logoPNG.png" alt="Logo Brabus" class="icon-logo" />
-        <p>ACADEMIA</p>
+        <a href="#home">
+          <p>BRABUS</p>
+          <img
+            src="./src/img/logoPNG.png"
+            alt="Logo Brabus"
+            class="icon-logo"
+          />
+          <p>ACADEMIA</p>
+        </a>
       </div>
 
       <!-- Menu Ham -->
@@ -28,12 +34,12 @@
           <span></span>
           <span></span>
         </div>
-<!-- Links do menu -->
+        <!-- Links do menu -->
         <ul class="nav-links" id="nav-links">
-          <li><a href="#">NOSSAS AULAS</a></li>
-          <li><a href="#">PLANOS</a></li>
-          <li><a href="#sobre" >SOBRE</a></li>
-          <li><a href="#">LOCALIZAÇÃO</a></li>
+          <li><a href="#nossas-aulas">NOSSAS AULAS</a></li>
+          <li><a href="#planos">PLANOS</a></li>
+          <li><a href="#sobre">SOBRE</a></li>
+          <li><a href="#localizacao">LOCALIZAÇÃO</a></li>
           <div class="links">
             <a href=""><img src="./src/img/whatsapp.png" alt="" /></a>
             <a href=""><img src="./src/img/instagram (1).png" alt="" /></a>
@@ -46,7 +52,7 @@
     <div class="dark">
       <div class="trapecio"></div>
 
-      <section>
+      <section id="home">
         <div class="container">
           <h1>CUIDE DO SEU CORPO, MENTE E ALMA.</h1>
           <h3>
@@ -59,8 +65,9 @@
           </button>
         </div>
       </section>
-<hr>
-      <section class="nossas-aulas">
+      <hr />
+      <!-- linha para separar as sections? -->
+      <section id="nossas-aulas">
         <div class="container">
           <h1>NOSSAS AULAS</h1>
           <div id="jiujitsu" class="aulas-card">
@@ -86,8 +93,7 @@
         </div>
       </section>
     </div>
-    <section>
-      
+    <section id="planos">
       <div class="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -161,18 +167,43 @@
             <p>Sim! Temos um plano de indicações, onde Lorem Ipsum.</p>
           </details>
         </div>
+        <h3>COMENTARIOS DOS ALUNOS:</h3>
+        <div class="testimonial-carousel">
+          <div class="testimonial active">
+            <p>"Ótima academia! Estrutura moderna e professores atenciosos."</p>
+            <h4>- João Silva</h4>
+          </div>
+          <div class="testimonial">
+            <p>
+              "Ambiente limpo e agradável. Me sinto motivado todos os dias!"
+            </p>
+            <h4>- Maria Oliveira</h4>
+          </div>
+          <div class="testimonial">
+            <p>"Variedade de equipamentos e aulas incríveis. Recomendo!"</p>
+            <h4>- Pedro Souza</h4>
+          </div>
+          <div class="testimonial">
+            <p>"Excelentes profissionais, sempre dispostos a ajudar."</p>
+            <h4>- Ana Paula</h4>
+          </div>
+        </div>
       </div>
     </section>
-    <section class="light">
+    <section id="localizacao" class="light">
       <div class="container">
         <h2 class="titulo">LOCALIZAÇÃO</h2>
         <p class="descricao">
           Estamos localizados próximo à estação Vila Sônia
         </p>
         <div class="endereco">
-          <img src="./src/img/pino-do-mapa.png" alt="" class="local" />
+          <a
+            href="https://www.google.com/maps/dir/-23.6538232,-46.7782023/Av.+Min.+Laudo+Ferreira+de+Camargo,+32+-+Jardim+Peri+Peri,+S%C3%A3o+Paulo+-+SP,+05537-000/@-23.6212854,-46.7991484,13z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x94ce568ee16adf7f:0xb35331fe58c74f0a!2m2!1d-46.7355338!2d-23.589296?entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoASAFQAw%3D%3D"
+          >
+            <img src="./src/img/pino-do-mapa.png" alt="" class="local" />
 
-          <a href="https://www.google.com/maps/dir/-23.6538232,-46.7782023/Av.+Min.+Laudo+Ferreira+de+Camargo,+32+-+Jardim+Peri+Peri,+S%C3%A3o+Paulo+-+SP,+05537-000/@-23.6212854,-46.7991484,13z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x94ce568ee16adf7f:0xb35331fe58c74f0a!2m2!1d-46.7355338!2d-23.589296?entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoASAFQAw%3D%3D">Av: Ministro Laudo Ferreira de Camargo, 32, São Paulo</a>
+            <p>Av: Ministro Laudo Ferreira de Camargo, 32, São Paulo</p>
+          </a>
         </div>
         <div class="mapa">
           <iframe
@@ -187,6 +218,7 @@
         </div>
       </div>
     </section>
+
     <!-- Rodapé -->
     <div class="line-footer">
       <p>BRABUS</p>
@@ -196,23 +228,26 @@
     <footer class="footer">
       <div class="footer-top">
         <div class="footer-left">
-          <p>Av: Ministro Laudo Ferreira de Camargo, 32, São Paulo</p>
+          <a href="https://www.google.com/maps/dir/-23.6538232,-46.7782023/Av.+Min.+Laudo+Ferreira+de+Camargo,+32+-+Jardim+Peri+Peri,+S%C3%A3o+Paulo+-+SP,+05537-000/@-23.6212854,-46.7991484,13z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x94ce568ee16adf7f:0xb35331fe58c74f0a!2m2!1d-46.7355338!2d-23.589296?entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoASAFQAw%3D%3D">Av: Ministro Laudo Ferreira de Camargo, 32, São Paulo</a>
         </div>
 
         <div class="footer-right">
-          <a href="#">NOSSAS AULAS</a>
-          <a href="#">PLANOS</a>
-          <a href="#">SOBRE</a>
-          <a href="#">LOCALIZAÇÃO</a>
+          <a href="#nossas-aulas">NOSSAS AULAS</a>
+          <a href="#planos">PLANOS</a>
+          <a href="#sobre">SOBRE</a>
+          <a href="#localizacao">LOCALIZAÇÃO</a>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <a href="#"><img src="./src/img/whatsapp.png" /></a>
-        <a href="#"
+        <a
+          href="https://wa.me/5511955556269?fbclid=PAAabiJOWT0c5hX6KawfnDBYqsZivz7fapCILhX5mfmOUqwGCoecaBO-O9wlk_aem_AY7BZQ1LPcZ2gU4hd1fg-YHC7hlEx9tbZmL6jVer_NpY4jWyvrRqIbOpADlY5v6Nu9E."
+          ><img src="./src/img/whatsapp.png"
+        /></a>
+        <a href="https://www.instagram.com/brabusacademia/"
           ><img src="./src/img/instagram (1).png" alt="Instagram"
         /></a>
-        <a href="#"><img src="./src/img/spotify.png" alt="Spotify" /></a>
+        <a href="https://open.spotify.com/playlist/4UPC6gxWKMM47E3B1weMTp?si=itY4zAkVScm5g3kIPIhoew&pi=u-cYHjAqc2S_uS&nd=1&dlsi=68fa50b204564c94"><img src="./src/img/spotify.png" alt="Spotify" /></a>
       </div>
     </footer>
     <script src="src/js/script.js"></script>

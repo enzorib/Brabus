@@ -1,25 +1,22 @@
 body {
-    color: #fff;
-    background: url(../img/bglight.png) center/contain  fixed;
-
+  color: #fff;
+  background: url(../img/bglight.png) center/cover fixed;
 }
 
 .dark {
   background: url(../img/background.png) center/cover no-repeat fixed;
   backdrop-filter: blur(1.5px);
 }
-.light{
-    color: #000000;
-height: 80vh;
-margin: 0;
+.light {
+  color: #000000;
+  height: 80vh;
+  margin: 0;
 }
-
-
 
 section {
   height: 80vh;
-  margin:0;
-
+  margin: 0;
+  scroll-margin-top: 140px;
 }
 
 header {
@@ -30,7 +27,7 @@ header {
   background-color: #1d1b1a;
   position: sticky;
   top: 0;
-   z-index: 1000;
+  z-index: 1000;
 }
 
 .logo {
@@ -41,6 +38,16 @@ header {
   font-weight: bold;
   font-size: large;
   color: #fff;
+}
+.logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: large;
+  color: #fff;
+  text-decoration: none;
 }
 
 .icon-logo {
@@ -123,14 +130,13 @@ nav.active {
   transition: transform 0.3s ease;
   z-index: 15;
 }
-.links img{
+.links img {
   margin-top: 150px;
   padding: 10px;
   justify-content: space-between;
   display: inline;
- width: 50px;
+  width: 50px;
   height: 50px;
-  
 }
 .nav-links.active {
   transform: translateY(0);
@@ -153,9 +159,9 @@ nav.active {
   clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
 }
 
-
 /* Botão estilizado */
-.botao_amarelo {      /* Ajuste para centralizar horizontalmente */
+.botao_amarelo {
+  /* Ajuste para centralizar horizontalmente */
   background: #f1c40f;
   color: #000;
   padding: 10px 20px;
@@ -165,11 +171,13 @@ nav.active {
   font-weight: bold;
   transition: all 0.3s ease;
 }
-#botaoAgende{display: block;         /* Adicione esta linha */
-  margin: 100% auto;}
+#botaoAgende {
+  display: block; /* Adicione esta linha */
+  margin: 100% auto;
+}
 
-#ver-mais{
-  display: block;         /* Adicione esta linha */
+#ver-mais {
+  display: block; /* Adicione esta linha */
   margin: 0 auto;
 }
 
@@ -179,15 +187,18 @@ h1 {
   letter-spacing: 2px;
 }
 .aulas-card {
- 
- margin: 20px 0;
+  margin: 20px 0;
   height: 40%;
   color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  
+}
+.aulas-card:hover {
+  transform: scale(1.05);
+  transition: transform 0.4s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .aulas-card h3 {
@@ -196,24 +207,20 @@ h1 {
   text-transform: uppercase;
 }
 
-#jiujitsu{
+#jiujitsu {
   background-image: url(../img/imgJiuJitsu.png);
   background-size: cover;
   background-position: center;
-  
 }
-#muaytai{
-
+#muaytai {
   background-image: url(../img/imgMuaythai.png);
   background-size: cover;
   background-position: center;
-  
 }
-
 
 .carousel {
   position: relative;
- 
+
   max-width: 100%;
 
   margin-bottom: 0;
@@ -264,10 +271,7 @@ button.next {
   width: 80%;
   margin: 5em auto;
   padding: 20px;
- 
 }
-
-
 
 .sobre h2,
 .faq h2 {
@@ -282,11 +286,9 @@ button.next {
 }
 
 .faq {
-
   border-radius: 10px;
   max-width: 700px;
   margin: 30px auto;
- 
 }
 
 .faq details {
@@ -294,7 +296,7 @@ button.next {
 }
 
 .faq summary {
-    font-size: 10px;
+  font-size: 10px;
   background: #555;
   width: 100%;
   text-align: center;
@@ -304,7 +306,6 @@ button.next {
   border-radius: 10px;
   cursor: pointer;
   list-style: none;
-  
 }
 
 .faq summary::marker {
@@ -316,10 +317,7 @@ button.next {
   text-align: center;
   background: #eee;
   border-radius: 5px;
- 
 }
-
-
 
 .titulo {
   font-size: 28px;
@@ -338,10 +336,15 @@ button.next {
   font-weight: bold;
   margin-bottom: 15px;
 }
-.endereco a{color: #000;
+.endereco a {
+  color: #000;
+}
+.endereco a {
+  display: flex;
+  float: left;
 }
 
-.local{
+.local {
   width: 50px;
   height: 50px;
 }
@@ -352,16 +355,23 @@ button.next {
   border: none;
 }
 
-.line-footer{
-   display: flex;
+.line-footer {
+  display: flex;
   align-items: center;
   padding: 10px 30px;
   background-color: #1d1b1a;
-  
 }
 .footer {
   background-color: #d1ac20;
   padding: 40px 60px;
+  color: black;
+}
+footer a
+a{
+  color: black;
+  text-decoration: none;
+}
+.footer a:visited {
   color: black;
 }
 
@@ -416,4 +426,44 @@ button.next {
 .footer-bottom img:hover {
   filter: none;
   transform: scale(1.1);
+}
+
+.testimonial-carousel {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  position: relative;
+  height: 150px; /*evita pular conteúdo */
+}
+
+.testimonial {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.testimonial p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.testimonial h4 {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #555;
 }
