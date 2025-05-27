@@ -7,11 +7,13 @@
     <title>Brabus Academia</title>
     <link rel="stylesheet" href="./src/css/style.css" />
     <link rel="stylesheet" href="./src/css/responsive.css" />
-    <link rel="icon" href="./src/Imagens" />
+    <link rel="icon" href="./src/img/logoPNG.png" />
     <link rel="stylesheet" href="./src/css/reset.css" />
   </head>
 
   <body>
+    <!-- Header -->
+
     <header>
       <div class="logo">
         <p>BRABUS</p>
@@ -19,17 +21,18 @@
         <p>ACADEMIA</p>
       </div>
 
+      <!-- Menu Ham -->
       <nav id="nav">
         <div class="ham-menu" id="ham-menu">
           <span></span>
           <span></span>
           <span></span>
         </div>
-
+<!-- Links do menu -->
         <ul class="nav-links" id="nav-links">
           <li><a href="#">NOSSAS AULAS</a></li>
           <li><a href="#">PLANOS</a></li>
-          <li><a href="#">SOBRE</a></li>
+          <li><a href="#sobre" >SOBRE</a></li>
           <li><a href="#">LOCALIZAÇÃO</a></li>
           <div class="links">
             <a href=""><img src="./src/img/whatsapp.png" alt="" /></a>
@@ -45,29 +48,31 @@
 
       <section>
         <div class="container">
-          <h1>CUIDE DO EU CORPO, MENTE E ALMA.</h1>
+          <h1>CUIDE DO SEU CORPO, MENTE E ALMA.</h1>
           <h3>
             VENHA FAZER UMA AULA GRATUITA E CONHEÇA A NOSSA ACADEMIA E AS AULAS
             QUE OFERECEMOS
           </h3>
 
-          <button id="botaoAgende" class="botao_amarelo">AGENDE UMA AULA</button>
+          <button id="botaoAgende" class="botao_amarelo">
+            AGENDE UMA AULA
+          </button>
         </div>
       </section>
-
-      <section>
+<hr>
+      <section class="nossas-aulas">
         <div class="container">
           <h1>NOSSAS AULAS</h1>
           <div id="jiujitsu" class="aulas-card">
             <h3>JIU-JITSU</h3>
           </div>
           <div id="muaytai" class="aulas-card">
-            <h3 >MUAY-THAI</h3>
+            <h3>MUAY-THAI</h3>
           </div>
 
           <!-- //CARDS ADICIONAIS -->
           <div id="extra-cards" style="display: none">
-            <div class="aulas-card">
+            <div id="jiujitsu" class="aulas-card">
               <h3>BOXE</h3>
             </div>
             <div class="aulas-card">
@@ -81,75 +86,38 @@
         </div>
       </section>
     </div>
-
-    <div class="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="./src/img/plans.png" alt="Imagem 1" />
+    <section>
+      
+      <div class="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./src/img/plans.png" alt="Imagem 1" />
+          </div>
+          <div class="carousel-item">
+            <img src="./src/img/plan1.png" alt="Imagem 2" />
+          </div>
+          <div class="carousel-item">
+            <img src="./src/img/plan2.png" alt="Imagem 3" />
+          </div>
+          <div class="carousel-item">
+            <img src="./src/img/plan3.png" alt="Imagem 3" />
+          </div>
         </div>
-        <div class="carousel-item">
-          <img src="./src/img/plan1.png" alt="Imagem 2" />
-        </div>
-        <div class="carousel-item">
-          <img src="./src/img/plan2.png" alt="Imagem 3" />
-        </div>
-        <div class="carousel-item">
-          <img src="./src/img/plan3.png" alt="Imagem 3" />
-        </div>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
       </div>
-      <button class="prev">&#10094;</button>
-      <button class="next">&#10095;</button>
-    </div>
+    </section>
 
-    <!-- <section>
-      <div class="container">
-        <div class="carrossel-container">
-          <div class="card-plano">
-            <h2>BRABUS TOTAL</h2>
-            <p>
-              Acesso livre a todas as aulas disponíveis, Muay-Thai, Jiu-Jitsu
-              entre outras + Musculação.
-            </p>
-            <p>Mensal: <strong>R$229,90</strong></p>
-            <p>Anual: <strong>R$172,90</strong></p>
-            <button>ESCOLHER PLANO</button>
-          </div>
+    <!-- CRIAR CARD COM A OPÇÃO PARA O USUARIO ESCOLHER O PLANO -->
 
-          <div class="card-plano">
-            <h2>BRABUS FITNESS</h2>
-            <p>
-              Musculação e aulas de funcional para quem quer manter a forma.
-            </p>
-            <p>Mensal: <strong>R$149,90</strong></p>
-            <p>Anual: <strong>R$119,90</strong></p>
-            <button>ESCOLHER PLANO</button>
-          </div>
-
-          <div class="card-plano">
-            <h2>BRABUS FIGHT</h2>
-            <p>Acesso às aulas de lutas como Muay-Thai e Jiu-Jitsu.</p>
-            <p>Mensal: <strong>R$179,90</strong></p>
-            <p>Anual: <strong>R$139,90</strong></p>
-            <button>ESCOLHER PLANO</button>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-    <section class="light">
+    <section id="sobre" class="light">
       <div class="container">
         <h2>SOBRE NÓS:</h2>
         <p>
           VENHA FAZER UMA AULA GRATUITA E CONHEÇA A NOSSA ACADEMIA E AS AULAS
           QUE OFERECEMOS.<br />
-          VENHA FAZER UMA AULA GRATUITA E CONHEÇA A NOSSA ACADEMIA E AS AULAS
-          QUE OFERECEMOS.<br />
-          VENHA FAZER UMA AULA GRATUITA E CONHEÇA A NOSSA ACADEMIA E AS AULAS
-          QUE OFERECEMOS.<br />
-          VENHA FAZER UMA AULA GRATUITA E CONHEÇA A NOSSA ACADEMIA E AS AULAS
-          QUE OFERECEMOS.<br />
-          VENHA FAZER UMA AULA GRATUITA E CONHEÇA A NOSSA ACADEMIA E AS AULAS
-          QUE OFERECEMOS.
+          A BRABUS ACADEMIA É UM ESPAÇO DEDICADO À PRÁTICA DE ATIVIDADES FÍSICAS
+          E AO BEM-ESTAR, OFERECENDO UMA VARIEDADE DE AULAS E TREINAMENTOS
         </p>
 
         <div class="faq">
@@ -204,7 +172,7 @@
         <div class="endereco">
           <img src="./src/img/pino-do-mapa.png" alt="" class="local" />
 
-          <p>Av: Ministro Laudo Ferreira de Camargo, 32, São Paulo</p>
+          <a href="https://www.google.com/maps/dir/-23.6538232,-46.7782023/Av.+Min.+Laudo+Ferreira+de+Camargo,+32+-+Jardim+Peri+Peri,+S%C3%A3o+Paulo+-+SP,+05537-000/@-23.6212854,-46.7991484,13z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x94ce568ee16adf7f:0xb35331fe58c74f0a!2m2!1d-46.7355338!2d-23.589296?entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoASAFQAw%3D%3D">Av: Ministro Laudo Ferreira de Camargo, 32, São Paulo</a>
         </div>
         <div class="mapa">
           <iframe
@@ -219,33 +187,34 @@
         </div>
       </div>
     </section>
- <!-- Rodapé -->
-  <div class="line-footer">
-    <p>BRABUS</p>
-        <img src="./src/img/logoPNG.png" alt="Logo Brabus" class="icon-logo" />
-        <p>ACADEMIA</p>
-  </div>
-  <footer class="footer">
-    <div class="footer-top">
-      <div class="footer-left">
-        <p>Av: Ministro Laudo Ferreira de Camargo, 32, São Paulo</p>
-        
+    <!-- Rodapé -->
+    <div class="line-footer">
+      <p>BRABUS</p>
+      <img src="./src/img/logoPNG.png" alt="Logo Brabus" class="icon-logo" />
+      <p>ACADEMIA</p>
+    </div>
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-left">
+          <p>Av: Ministro Laudo Ferreira de Camargo, 32, São Paulo</p>
+        </div>
+
+        <div class="footer-right">
+          <a href="#">NOSSAS AULAS</a>
+          <a href="#">PLANOS</a>
+          <a href="#">SOBRE</a>
+          <a href="#">LOCALIZAÇÃO</a>
+        </div>
       </div>
 
-      <div class="footer-right">
-        <a href="#">NOSSAS AULAS</a>
-        <a href="#">PLANOS</a>
-        <a href="#">SOBRE</a>
-        <a href="#">LOCALIZAÇÃO</a>
+      <div class="footer-bottom">
+        <a href="#"><img src="./src/img/whatsapp.png" /></a>
+        <a href="#"
+          ><img src="./src/img/instagram (1).png" alt="Instagram"
+        /></a>
+        <a href="#"><img src="./src/img/spotify.png" alt="Spotify" /></a>
       </div>
-    </div>
-
-    <div class="footer-bottom">
-      <a href="#"><img src="./src/img/whatsapp.png"></a>
-      <a href="#"><img src="./src/img/instagram (1).png" alt="Instagram"></a>
-      <a href="#"><img src="./src/img/spotify.png" alt="Spotify"></a>
-    </div>
-  </footer>
+    </footer>
     <script src="src/js/script.js"></script>
   </body>
 </html>
